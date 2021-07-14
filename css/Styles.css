@@ -1,0 +1,79 @@
+:root {
+  font-size: 18px;
+  --gris30: #212121;
+  --gris20: #212429;
+  --gris10: #616161;
+}
+
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-italic.otf');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-bold.otf');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: charter;
+  src: url('../fonts/charter-bold-italic.otf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+body{
+  color: var(--gris30);
+  font-family: 'Roboto', sans-serif;
+  /* font-family: charter; */
+}
+
+a{
+  color: var(--gris30);
+}
+
+header{
+  /* --gris10:red; */
+  font-size: 14px;
+  color: var(--gris10);
+}
+header a {
+  color: var(--gris10);
+  text-decoration: none;
+}
+
+header a:hover{
+  color: var(--gris30);
+}
+
+nav details summary{
+  font-weight: bold;
+}
+
+h2{
+  font-size: 2em;
+}
+
+h3{
+  font-size: 1.5em;
+}
+
+pre {
+background: #FEC62E;
+;
+}
+.hero{
+  background: linear-gradient(to top, rgba(255, 255, 255, .3),white,transparent),url('../images/pattern.png');
+  height: 300px;
+}
+
