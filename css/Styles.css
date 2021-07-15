@@ -77,3 +77,26 @@ background: #FEC62E;
   height: 300px;
 }
 
+.section-content {
+  counter-reset: listadetitulos;
+}
+
+.section-content h3{
+  counter-increment: listadetitulos;
+}
+
+.section-content h3::before{
+  content:  counter(listadetitulos) '-';
+}
+
+.section-content h3::after{
+  content: '';
+  width: 240px;
+  height: 4px;
+  background: var(--gris30);
+  display: block;
+}
+
+/* ::selection{
+  background: var(--gris10);
+} */
